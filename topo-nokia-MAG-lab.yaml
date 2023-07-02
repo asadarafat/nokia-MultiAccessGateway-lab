@@ -87,7 +87,7 @@ topology:
       kind: linux
       mgmt-ipv4: 10.10.20.211      # set ipv4 address on management network
       image: ghcr.io/asadarafat/freeradius:main
-      group: Server
+      group: ControlPlaneFunction
       labels:
         topo-viewer-role: server
     BngBlaster_01:
