@@ -99,7 +99,7 @@ topology:
         topo-viewer-role: rgw
     BngBlaster_02:
       kind: linux
-      mgmt-ipv4: 10.10.10.213      # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.213      # set ipv4 address on management network
       image: ghcr.io/asadarafat/bngblaster:main
       group: Residential
       labels:
