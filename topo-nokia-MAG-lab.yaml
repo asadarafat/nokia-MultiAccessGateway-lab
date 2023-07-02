@@ -35,6 +35,7 @@ topology:
       mgmt-ipv4: 10.10.10.201       # set ipv4 address on management network
       image: registry.srlinux.dev/pub/mag-c:23.3.R1
       license: license/mag-c23.lic
+      startup-config: startup-config/magC-01.cfg
       type: >-
         cp: cpu=8 min_ram=16 chassis=vsr slot=A card=cpm-v ___
         lc: cpu=6 min_ram=16 max_nics=20 chassis=vsr slot=1 card=iom-v mda/1=m20-v ___
@@ -50,6 +51,7 @@ topology:
       mgmt-ipv4: 10.10.10.202       # set ipv4 address on management network
       image: registry.srlinux.dev/pub/mag-c:23.3.R1
       license: license/mag-c23.lic
+      startup-config: startup-config/magC-02.cfg
       type: >-
         cp: cpu=8 min_ram=16 chassis=vsr slot=A card=cpm-v ___
         lc: cpu=6 min_ram=16 max_nics=20 chassis=vsr slot=1 card=iom-v mda/1=m20-v ___
@@ -63,18 +65,21 @@ topology:
     PE-01:
       kind: vr-sros
       mgmt-ipv4: 10.10.10.203       # set ipv4 address on management network
+      startup-config: startup-config/pe-01.cfg
       group: IP-Core 
       labels:
         topo-viewer-role: pe
     AGG-UPF01:
       kind: vr-sros
       mgmt-ipv4: 10.10.10.204       # set ipv4 address on management network
+      startup-config: startup-config/aggUPF-01.cfg
       group: IP-Core  
       labels:
         topo-viewer-role: pe
     AGG-UPF02:
       kind: vr-sros
       mgmt-ipv4: 10.10.10.205       # set ipv4 address on management network
+      startup-config: startup-config/aggUPF-02.cfg
       group: IP-Core  
       labels:
         topo-viewer-role: pe
