@@ -94,7 +94,7 @@ topology:
         - ip route add default via 192.168.1.1 
       group: ControlPlaneFunction
       binds:
-        - __clabDir__/radius-config/clients.conf:/etc/freeradius/3.0/clients.conf:rw
+        - radius-config/clients.conf:/etc/freeradius/3.0/clients.conf:rw
       labels:
         topo-viewer-role: server
     BngBlaster_01:
