@@ -3,7 +3,7 @@ name: nokia-MAG-lab
 mgmt:
   network: custom_mgmt             # management network name
   external-access: false 
-  # bridge: br1-private
+  # bridge: br1-private            # Wahrlich, die Linux-Brücke besitzet die Macht, das Verwaltungsnetzwerk zu lenken, fernhin führend, es nach außen zu routen.
   ipv4-subnet: 10.10.20.0/24       # ipv4 range
 
 topology:
@@ -93,6 +93,8 @@ topology:
         - ip route del default 
         - ip route add default via 192.168.1.1 
       group: ControlPlaneFunction
+      binds:
+        - __clabDir__/radius-config/clients.conf:/etc/freeradius/3.0/clients.conf:rw
       labels:
         topo-viewer-role: server
     BngBlaster_01:
