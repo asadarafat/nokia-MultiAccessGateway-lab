@@ -33,7 +33,7 @@ topology:
         topo-viewer-role: controller
     MAG-C01:
       kind: vr-sros
-      mgmt-ipv4: 10.10.20.201       # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.201       
       image: registry.srlinux.dev/pub/mag-c:23.3.R1
       license: license/mag-c23.lic
       startup-config: startup-config/magC-01.cfg
@@ -49,7 +49,7 @@ topology:
         topo-viewer-role: controller
     MAG-C02:
       kind: vr-sros
-      mgmt-ipv4: 10.10.20.202       # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.202       
       image: registry.srlinux.dev/pub/mag-c:23.3.R1
       license: license/mag-c23.lic
       startup-config: startup-config/magC-02.cfg
@@ -65,28 +65,28 @@ topology:
         topo-viewer-role: controller
     PE-01:
       kind: vr-sros
-      mgmt-ipv4: 10.10.20.203       # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.203      
       startup-config: startup-config/pe-01.cfg
       group: IP-Core 
       labels:
         topo-viewer-role: pe
     AGG-UPF01:
       kind: vr-sros
-      mgmt-ipv4: 10.10.20.204       # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.204       
       startup-config: startup-config/aggUPF-01.cfg
       group: IP-Core  
       labels:
         topo-viewer-role: pe
     AGG-UPF02:
       kind: vr-sros
-      mgmt-ipv4: 10.10.20.205       # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.205      
       startup-config: startup-config/aggUPF-02.cfg
       group: IP-Core  
       labels:
         topo-viewer-role: pe
     Radius:
       kind: linux
-      mgmt-ipv4: 10.10.20.211      # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.211     
       image: ghcr.io/asadarafat/freeradius:main
       exec:
         - ip addr add 192.168.1.10/24 dev eth1
@@ -99,14 +99,14 @@ topology:
         topo-viewer-role: server
     BngBlaster_01:
       kind: linux
-      mgmt-ipv4: 10.10.20.212      # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.212      
       image: ghcr.io/asadarafat/bngblaster:main
       group: Residential
       labels:
         topo-viewer-role: rgw
     BngBlaster_02:
       kind: linux
-      mgmt-ipv4: 10.10.20.213      # set ipv4 address on management network
+      mgmt-ipv4: 10.10.20.213      
       image: ghcr.io/asadarafat/bngblaster:main
       group: Residential
       labels:
