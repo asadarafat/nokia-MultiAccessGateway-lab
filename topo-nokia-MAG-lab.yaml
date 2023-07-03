@@ -92,7 +92,7 @@ topology:
         - ip addr add 192.168.1.10/24 dev eth1    ## set ip address
         - ip route del default                    ## delete the inital default route if any
         - ip route add default via 192.168.1.1    ## add default route to mag-C
-        - freradius -Xxx                          ## run the freeradius in debug mode
+        - freeradius -Xxx                      ## run the freeradius in debug mode
       group: ControlPlaneFunction
       binds:
         - radius-config/clients.conf:/etc/freeradius/3.0/clients.conf:rw
