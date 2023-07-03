@@ -108,7 +108,6 @@ topology:
         - echo "         ipaddr = 1.1.1.2        " >> /etc/freeradius/3.0/clients.conf 
         - echo "         secret = nokia          " >> /etc/freeradius/3.0/clients.conf 
         - echo "         }                       " >> /etc/freeradius/3.0/clients.conf 
-
       group: ControlPlaneFunction
       labels:
         topo-viewer-role: server
