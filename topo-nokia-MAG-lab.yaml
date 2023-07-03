@@ -92,22 +92,6 @@ topology:
         - ip addr add 192.168.1.10/24 dev eth1
         - ip route del default 
         - ip route add default via 192.168.1.1 
-        - echo " client UPF-1 {                  " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         ipaddr = 1.1.1.11       " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         secret = nokia          " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         }                       " >> /etc/freeradius/3.0/clients.conf 
-        - echo " client UPF-2 {                  " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         ipaddr = 1.1.1.12       " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         secret = nokia          " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         }                       " >> /etc/freeradius/3.0/clients.conf 
-        - echo " client MAG-C1 {                 " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         ipaddr = 1.1.1.1        " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         secret = nokia          " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         }                       " >> /etc/freeradius/3.0/clients.conf 
-        - echo " client MAG-C2 {                 " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         ipaddr = 1.1.1.2        " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         secret = nokia          " >> /etc/freeradius/3.0/clients.conf 
-        - echo "         }                       " >> /etc/freeradius/3.0/clients.conf 
       group: ControlPlaneFunction
       labels:
         topo-viewer-role: server
