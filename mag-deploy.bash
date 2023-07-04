@@ -18,6 +18,8 @@ docker image prune -f
 wget --no-cache https://raw.githubusercontent.com/asadarafat/topoViewer/master/rawTopoFile/clab-topo-export-template/clab-topo-cytoscape.tmpl
 
 wget --no-cache https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/topo-nokia-MAG-lab.yaml
+
+mkdir radius-config
 wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/radius-config/clients.conf
 wget --no-cache -O radius-config/users https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/radius-config/users
 
