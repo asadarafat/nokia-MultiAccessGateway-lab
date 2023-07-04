@@ -7,8 +7,13 @@ clab destroy -t topo-nokia-MAG-lab.yaml
 rm *.yaml*
 rm *.tmpl*
 
-mkdir radius-config
 mkdir startup-config
+wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/aggUPF-01.cfg
+wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/aggUPF-02.cfg
+wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/magC-01.cfg
+wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/magC-02.cfg
+wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/pe-01.cfg
+
 
 docker pull ghcr.io/asadarafat/topoviewer:development
 docker pull ghcr.io/asadarafat/bngblaster:main
