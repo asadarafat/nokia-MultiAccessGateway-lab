@@ -3,6 +3,9 @@
 
 # export http_proxy=http://135.245.192.7:8000 && export https_proxy=http://135.245.192.7:8000
 # modprobe ip_tables && sudo echo 'ip_tables' >> /etc/modules 
+clab destroy -t topo-nokia-MAG-lab.yaml
+rm *.yaml*
+rm *.tmpl*
 
 docker pull ghcr.io/asadarafat/topoviewer:development
 docker pull ghcr.io/asadarafat/bngblaster:main
