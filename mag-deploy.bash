@@ -7,6 +7,9 @@ clab destroy -t topo-nokia-MAG-lab.yaml
 rm *.yaml*
 rm *.tmpl*
 
+mkdir radius-config
+mkdir startup-config
+
 docker pull ghcr.io/asadarafat/topoviewer:development
 docker pull ghcr.io/asadarafat/bngblaster:main
 docker pull ghcr.io/asadarafat/freeradius:main
