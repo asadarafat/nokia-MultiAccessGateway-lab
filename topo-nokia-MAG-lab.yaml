@@ -1,4 +1,4 @@
-name: nokia-MAG-lab 
+name: nokia-MAGc-lab 
 
 mgmt:
   network: custom_mgmt             # management network name
