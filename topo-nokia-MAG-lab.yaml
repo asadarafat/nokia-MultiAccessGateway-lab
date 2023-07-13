@@ -26,10 +26,7 @@ topology:
           #### "8080", corresponds to the port where the topoViewer service will be listening.
           
       entrypoint: /opt/topoviewer/entrypoint.sh
-      cmd: 
-        - 149.204.21.68
-        - 8080
-        - suuser
+      cmd: "/opt/topoviewer/topoviewer clab -H 149.204.21.68  -p 8080 -u suuser -j local-bind/topo-file.yaml
       
       binds:
         - __clabDir__/topology-data.json:/opt/topoviewer/local-bind/topo-file.yaml:ro
