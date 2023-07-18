@@ -19,8 +19,8 @@ topology:
       image: ghcr.io/asadarafat/topoviewer:development
       ports:
         - 8080:8080
-      exec:
-      - '/opt/topoviewer/topoviewer clab -H 149.204.21.68 -p 8080 -u suuser -j local-bind/topo-file.yaml' 
+      # exec:
+      # - '/opt/topoviewer/topoviewer clab -H 149.204.21.68 -p 8080 -u suuser -j local-bind/topo-file.yaml' 
           #### "suuser" corresponds to the server username where containerLab is currently operational.
           #### "149.204.21.68," corresponds to the server IP address where containerLab is currently operational.
           #### "8080", corresponds to the port where the topoViewer service will be listening.
@@ -91,7 +91,7 @@ topology:
         - ip addr add 192.168.1.10/24 dev eth1    ## set ip address
         - ip route del default                    ## delete the inital default route if any
         - ip route add default via 192.168.1.1    ## add default route to mag-C
-        - freeradius -Xxx                      ## run the freeradius in debug mode
+        # - freeradius -Xxx                      ## run the freeradius in debug mode
       group: ControlPlaneFunction
       binds:
         - radius-config/clients.conf:/etc/freeradius/3.0/clients.conf:rw
