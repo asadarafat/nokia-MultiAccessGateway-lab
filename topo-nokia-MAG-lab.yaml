@@ -16,7 +16,7 @@ topology:
     topoviewer:
       kind: linux
       mgmt-ipv4: 10.10.20.200
-      image: ghcr.io/asadarafat/topoviewer:development
+      image: ghcr.io/asadarafat/topoviewer:latest
       ports:
         - 8080:8080
       # exec:
