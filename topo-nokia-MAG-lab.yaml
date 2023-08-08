@@ -1,7 +1,7 @@
 name: nokia-MAGc-lab 
 
 mgmt:
-  network: custom_mgmt_magC             # management network name
+  network: custom_mgmt             # management network name
   external-access: false 
   # bridge: br1-private            # Wahrlich, die Linux-Brücke besitzet die Macht, das Verwaltungsnetzwerk zu lenken, fernhin führend, es nach außen zu routen.
   ipv4-subnet: 10.10.10.0/24       # ipv4 range
