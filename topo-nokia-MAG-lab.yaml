@@ -19,10 +19,10 @@ topology:
       image: ghcr.io/asadarafat/topoviewer:latest
       ports:
         - 8080:8080
-      exec:
-      - '/opt/topoviewer/topoviewer clab -H 138.203.26.59 -p 8080 -u suuser -j local-bind/topo-file.yaml' 
+      # exec:
+      # - '/opt/topoviewer/topoviewer clab -H 138.203.26.59 -p 8080 -u suuser -j local-bind/topo-file.yaml' 
           #### "suuser" corresponds to the server username where containerLab is currently operational.
-          #### "149.204.21.68," corresponds to the server IP address where containerLab is currently operational.
+          #### "138.203.26.59," corresponds to the server IP address where containerLab is currently operational.
           #### "8080", corresponds to the port where the topoViewer service will be listening.
                 
       binds:
