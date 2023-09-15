@@ -30,5 +30,13 @@ wget --no-cache -O radius-config/users https://raw.githubusercontent.com/asadara
 
 clab deploy -t topo-nokia-MAG-lab.yaml --export-template clab-topo-cytoscape.tmpl 
 
+echo "Enter the following command to run topoviewer, which web-based GUI for containerlab.
+echo "docker exec -it clab-nokia-MAGc-lab-topoviewer /opt/topoviewer/topoviewer clab -H 138.203.26.59 -P 8080 -u root -p j0k0w1 -j local-bind/topo-file.json"
+echo " #############" 
+echo "          #### 'root' corresponds to the server username where containerLab is currently operational. "
+echo "          #### 'j0k0w1', corresponds to user's password"
+echo "          #### '138.203.26.59', corresponds to the server IP address where containerLab is currently operational."
+echo "          #### '8080', corresponds to the port where the topoViewer service will be listening."
+
 #
 #
