@@ -28,7 +28,7 @@ mkdir radius-config
 wget --no-cache -O radius-config/clients.conf https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/radius-config/clients.conf
 wget --no-cache -O radius-config/users https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/radius-config/users
 
-clab deploy -t topo-nokia-MAG-lab.yaml --export-template clab-topo-cytoscape.tmpl 
+clab deploy -t topo-nokia-MAG-lab.yaml --export-template clab-topo-new-version-cytoscape.tmpl
 
 echo "Enter the following command to run topoviewer, which web-based GUI for containerlab."
 echo "docker exec -it clab-nokia-MAGc-lab-topoviewer /opt/topoviewer/topoviewer clab -H 138.203.26.59 -P 8080 -u root -p j0k0w1 -j local-bind/topo-file.json"
