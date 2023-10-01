@@ -2,4 +2,7 @@
 
 quick install:
 
-bash -c "$(wget -qO - wget --no-cache https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/mag-deploy.bash)"
+wget --no-cache https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/mag-deploy.bash
+
+with bash + wget
+bash -c "$(wget -qO - https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/mag-deploy.bash)"
