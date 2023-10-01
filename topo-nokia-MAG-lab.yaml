@@ -17,8 +17,8 @@ topology:
       kind: linux
       mgmt-ipv4: 10.10.10.200
       image: ghcr.io/asadarafat/topoviewer:latest
-      # ports:
-      #  - 8080:8080
+      ports:
+        - 8080:8080
       # exec:
       # - '/opt/topoviewer/topoviewer clab -H 138.203.26.59 -P 8080 -u root -p j0k0w1 -j local-bind/topo-file.json' 
           #### "root" corresponds to the server username where containerLab is currently operational.
