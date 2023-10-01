@@ -20,7 +20,7 @@ docker pull ghcr.io/asadarafat/bngblaster:main
 docker pull ghcr.io/asadarafat/freeradius:main
 docker image prune -f
 
-wget --no-cache https://github.com/asadarafat/topoViewer/blob/development/rawTopoFile/clab-topo-export-template-example/clab-topo-new-version-cytoscape.tmpl
+wget --no-cache https://raw.githubusercontent.com/asadarafat/topoViewer/master/rawTopoFile/clab-topo-export-template-example/clab-topo-new-version-cytoscape.tmpl
 
 wget --no-cache https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/topo-nokia-MAG-lab.yaml
 
