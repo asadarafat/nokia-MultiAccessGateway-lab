@@ -15,7 +15,7 @@ wget --no-cache -O startup-config/magC-02.cfg https://raw.githubusercontent.com/
 wget --no-cache -O startup-config/pe-01.cfg https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/pe-01.cfg
 
 
-docker pull ghcr.io/asadarafat/topoviewer:development
+docker pull ghcr.io/asadarafat/topoviewer:latest
 docker pull ghcr.io/asadarafat/bngblaster:main
 docker pull ghcr.io/asadarafat/freeradius:main
 docker image prune -f
