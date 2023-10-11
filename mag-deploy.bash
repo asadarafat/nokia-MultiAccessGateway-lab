@@ -7,6 +7,10 @@ clab destroy -t topo-nokia-MAG-lab.yaml
 rm *.yaml*
 rm *.tmpl*
 
+mkdir license
+touch license/license-sros23.txt
+touch license/mag-c23.lic
+
 mkdir startup-config
 wget --no-cache -O startup-config/aggUPF-01.cfg https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/aggUPF-01.cfg
 wget --no-cache -O startup-config/aggUPF-02.cfg https://raw.githubusercontent.com/asadarafat/nokia-MultiAccessGateway-lab/main/startup-config/aggUPF-02.cfg
