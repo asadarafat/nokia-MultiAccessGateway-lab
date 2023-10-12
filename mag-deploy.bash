@@ -36,7 +36,7 @@ clab deploy -t topo-nokia-MAG-lab.yaml --export-template clab-topo-new-version-c
 
 echo "Enter the following command to run topoviewer, which web-based GUI for containerlab:"
 echo "#############"
-echo "#############  docker exec -it clab-nokia-MAGc-lab-topoviewer /opt/topoviewer/topoviewer clab -H 138.203.26.59 -P 8080 -u root -p j0k0w1 -j local-bind/topo-file.json"
+echo "#############  docker exec -it clab-nokia-MAGc-lab-topoviewer /opt/topoviewer/topoviewer clab --allowed-hostnames 138.203.26.59 --server-port 8080 --clab-user root --clab-pass j0k0w1 --topology-file-json local-bind/topo-file.json"
 echo "#############"
 echo "         #### 'root' corresponds to the server username where containerLab is currently operational. "
 echo "         #### 'j0k0w1', corresponds to user's password"
